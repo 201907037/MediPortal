@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인체모형</title>
+<style>
+	.imgH{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	
+</style>
+</head>
+<body class="body">
+<img src="/img/2nd.png" usemap="#image-map" class="imgH">
+
+<map name="image-map">
+    <area target="_top" alt="머리" title="머리" href="/goheadMain" coords="4,7,216,83" shape="rect">
+    <area target="_top" alt="목" title="목" href="/goneckMain" coords="143,96,329,135" shape="rect">
+    <area target="_top" alt="어깨" title="어깨" href="/goshoulderMain" coords="277,139,280,168,8,160,6,117,8,92,130,91,131,135,147,136" shape="poly">
+    <area target="_top" alt="가슴" title="가슴" href="/gochestMain" coords="120,167,325,238" shape="rect">
+    <area target="_top" alt="복부" title="복부" href="/gostomachMain" coords="121,245,112,313,208,324,272,373,339,418,341,235,146,242" shape="poly">
+    <area target="_top" alt="팔" title="팔" href="/gohandMain" coords="112,172,102,428,7,392,9,307,77,301,84,173,98,173" shape="poly">
+    <area target="_top" alt="다리" title="다리" href="/golegMain" coords="21,445,21,481,127,616,153,624,172,380,111,381,111,435,101,440,70,445" shape="poly">
+    <area target="_top" alt="무릎" title="무릎" href="/gokneeMain" coords="342,551,184,464" shape="rect">
+    <area target="_top" alt="발" title="발" href="/gofootMain" coords="18,620,332,698" shape="rect">
+</map>
+</body>
+</html>
