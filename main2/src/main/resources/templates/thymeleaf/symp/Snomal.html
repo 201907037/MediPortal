@@ -5,23 +5,72 @@
 <title>Insert title here</title>
 <style>
 	
-	.table{
-		position: absolute;
-		top: 20%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		font-size: 20px;
-	}
+	body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1{
+	 text-align: center;
+}
+.warn{
+	 text-align: center;
+}
+
+
+.list-container {
+  width: 800px; /* 리스트 컨테이너의 너비를 조절하세요 */
+  margin: 20px auto; /* 가운데 정렬을 위한 마진 설정 */
+}
+
+.list-item {
+  border-bottom: 1px solid #ddd; /* 각 항목을 선으로 구분 */
+  padding: 10px;
+  cursor: pointer; /* 선택 가능한 항목으로 표시 */
+}
 </style>
 </head>
 <body class="body">
-<tabe class="table">
-	<tr>
-		<td>사용방법 : </td><td>증상이 있는 부위를 좌측 모형에서 클릭</td>
-	</tr>
-	<tr>
-		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>현재 화면에 증상에 관한 정보가 나타납니다.</td>
-	</tr>
-</tabe>
+<h1>사용방법 : 증상이 있는 부위를 좌측 모형에서 클릭하세요.</h1>
+<h2 class="warn">질환별 주의사항</h2>
+	 <div class="list-container">
+    <div class="list-item">
+		<h2>호흡기질환</h2>
+		<p>
+			찬바람, 찬음료를 주의하시고 창문을 닫고 주무세요.<br>
+			충분한 수분, 수면, 영양식 공급이 중요합니다.<br>
+			손을 자주 씻고, 취침시 건조하지 않도록 가습기를 이용해 주세요.
+		</p>
+	</div>
+    <div class="list-item">
+		<h2>소화기질환</h2>
+		<p>
+			과식, 기름진 음식, 튀김류, 밀가루류, 찬음식, 매운음식, 술, 담배 절대적으로 주의하세요.<br>
+			가급적 따뜻한 음식을 소식하면서 천천히 규칙적으로 식사하는 습관이 중요합니다.<br>
+		</p>
+	</div>
+    <div class="list-item">
+		<h2>근골격근질환</h2>
+		<p>
+			관절이나 근육부위를 유연하게 하고 아침, 저녁으로 가벼운 스트레칭을 꾸준하게 하세요.
+		</p>
+	</div>
+	<div class="list-item">
+		<h2>피부질환</h2>
+		<p>
+			덥고 습한곳을 피하고 환부를 지나치게 긁거나 비비거나 문지르지 않도록 주의하세요.
+		</p>
+	</div>
+    
+    <div class="list-item">
+		<h2>안과질환</h2>
+		<p>
+			손을 자주씻고 눈을 비비거나 긁지 마시고 강한 햇빛에 주의하세요.
+		</p>
+	</div>
+  </div>	
+	
+	
+	
 </body>
 </html>

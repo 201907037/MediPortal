@@ -26,16 +26,16 @@ public class MainController {
    
 	 @GetMapping("/main")
 	   public String goTest() {
-		   return "/main";
+		   return "main";
 	   }
 	 @GetMapping("/notice")
 	   public String goNotice() {
-		   return "/source/notice";
+		   return "source/notice";
 	   }
 	 @GetMapping("/showS")
 	   public String goShowS(Model model) {
 		 model.addAttribute("rightFrameSrc", "/Snomal");
-		   return "/source/showS";
+		   return "source/showS";
 	   }
 		
 	   
@@ -50,7 +50,7 @@ public class MainController {
 		   
 		   if(mSearch.isEmpty()) {
 			   model.addAttribute("name", keyword);
-			   return "/source/noResult";
+			   return "source/noResult";
 		   }
 		   else {
 			  
@@ -71,7 +71,7 @@ public class MainController {
 				}
 				   model.addAttribute("list", mlist);
 				   model.addAttribute("name", keyword);
-				   return "/source/searchList";
+				   return "source/searchList";
 		   }
 	   }
 	  
@@ -100,6 +100,6 @@ public class MainController {
 			 * List<Details> d = new ArrayList<Details>(); d.add(detail);
 			 * model.addAttribute("list", d);
 			 */
-		   return "/source/searchView";
+		   return "source/searchView";
 	   }
 }

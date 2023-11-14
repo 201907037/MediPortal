@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class SympController {
 	@GetMapping("/human")
 	public String PicHum() {
-		return "/symp/human";
+		return "symp/human";
 	}
 
 	@GetMapping("/Snomal")
 	public String SympMain() {
-		return "/symp/Snomal";
+		return "symp/Snomal";
 	}
 
 	

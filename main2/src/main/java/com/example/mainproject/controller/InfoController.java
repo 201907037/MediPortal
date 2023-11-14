@@ -58,6 +58,6 @@ public class InfoController {
 		model.addAttribute("name", mName);
 		model.addAttribute("detail", detail);
 		
-		return "/source/searchView";
+		return "source/searchView";
 	}
 }
